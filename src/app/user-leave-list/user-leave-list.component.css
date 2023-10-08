@@ -1,0 +1,101 @@
+/* Add your CSS styles here */
+
+.leave-list {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Add this CSS to your component's CSS file */
+.scrollable-form {
+  height: 400px; /* Adjust the height as needed */
+  overflow-y: scroll;
+  border: 1px solid #ccc; /* Add a border for better styling */
+  padding: 10px; /* Add padding for spacing */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+table th:hover {
+  background-color: #007acc;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Delete button style */
+.delete-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+/* Edit Leave Request Form Styles */
+.edit-form {
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.edit-form h2 {
+  color: #007acc;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.edit-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-form label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="date"],
+.edit-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form button[type="button"] {
+  width: 100px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button[type="button"]:hover {
+  background-color: #0056b3;
+}

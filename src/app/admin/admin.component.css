@@ -1,0 +1,19 @@
+/* Example CSS for the attractive image container */
+.attractive-image-container {
+    text-align: center;
+    margin: 180px auto;
+  }
+  
+  /* Example CSS for the attractive image */
+  .attractive-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .attractive-image-container img:hover {
+    transform: scale(1.1);
+  }
+  

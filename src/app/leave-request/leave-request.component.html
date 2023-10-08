@@ -1,0 +1,42 @@
+<!-- leave-request.component.html -->
+<app-admin-navbar></app-admin-navbar>
+<div class="leave-request-list">
+    <h2>Leave Request List</h2> <!-- Add this heading -->
+  
+    <table>
+      <!-- Table header here -->
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Status</th>
+          <th>Reason</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+  
+      <tbody>
+        <tr *ngFor="let leaveRequest of leaveRequests">
+          <!-- Display leave request details here -->
+          <td>{{ leaveRequest.id }}</td>
+          <td>{{ leaveRequest.startDate }}</td>
+          <td>{{ leaveRequest.endDate }}</td>
+          <td>{{ leaveRequest.status }}</td>
+          <td>{{ leaveRequest.reason }}</td>
+          <td>
+            <!-- Buttons or dropdowns for admin actions -->
+            <!-- <button (click)="approveLeaveRequest(leaveRequest)">Approve</button>
+            <button (click)="rejectLeaveRequest(leaveRequest)">Reject</button> -->
+         
+            <button (click)="approveLeaveRequest(leaveRequest)" class="blue-button">Approve</button>
+          
+            <!-- Red button for Reject -->
+            <button (click)="rejectLeaveRequest(leaveRequest)" class="red-button">Reject</button>
+          
+        </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <app-footer></app-footer>

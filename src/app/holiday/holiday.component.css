@@ -1,0 +1,43 @@
+/* Add your CSS styles for the holiday component here */
+.holiday-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  table th:hover {
+    background-color: #007acc;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Edit button style */
+  button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005b9e;
+  }
+  

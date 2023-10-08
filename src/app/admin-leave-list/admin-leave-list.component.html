@@ -1,0 +1,57 @@
+
+
+<app-admin-navbar></app-admin-navbar>
+<!-- <app-user-navbar></app-user-navbar> -->
+
+<div class="leave-list">
+ <h2>Leave List</h2>
+ <table>
+   <thead>
+     <tr>
+       <th>ID</th>
+       <th>Start Date</th>
+       <th>End Date</th>
+       <th>Status</th>
+       <th>Reason</th>
+       <th>Actions</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let leaveRequest of leaveRequests">
+       <td>{{ leaveRequest.id }}</td>
+       <td>{{ leaveRequest.startDate }}</td>
+       <td>{{ leaveRequest.endDate }}</td>
+       <td>{{ leaveRequest.status }}</td>
+       <td>{{ leaveRequest.reason }}</td>
+       <td>
+         <button (click)="editLeaveRequest(leaveRequest)">Edit</button>
+         <button (click)="deleteLeaveRequest(leaveRequest)" class="delete-button">Delete</button>
+       </td>
+     </tr>
+   </tbody>
+ </table>
+</div>
+
+<!-- Edit Leave Request Form -->
+<div class="edit-form" *ngIf="editingLeaveRequest">
+ <h2>Edit Leave Request</h2>
+ <form [formGroup]="editForm">
+   <input type="hidden" id="id" formControlName="id" />
+
+   <label for="startDate">Start Date:</label>
+   <input type="date" id="startDate" formControlName="startDate" />
+
+   <label for="endDate">End Date:</label>
+   <input type="date" id="endDate" formControlName="endDate" />
+
+   <label for="status">Status:</label>
+   <input type="text" id="status" formControlName="status"    />
+
+   <label for="reason">Reason:</label>
+   <textarea id="reason" formControlName="reason"></textarea>
+
+   <button type="button" (click)="saveLeaveRequest()">Save</button>
+     <button type="button" (click)="closeEditForm()">Close</button>
+ </form>
+</div>
+<app-footer></app-footer>

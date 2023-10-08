@@ -1,0 +1,17 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="holiday-edit">
+    <h2>Edit Holiday</h2>
+    <form (ngSubmit)="saveHoliday()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="holiday.name" name="name" required />
+  
+      <label for="date">Date:</label>
+      <input type="text" id="date" [(ngModel)]="holiday.date" name="date" required />
+  
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+  <app-footer></app-footer>
+  

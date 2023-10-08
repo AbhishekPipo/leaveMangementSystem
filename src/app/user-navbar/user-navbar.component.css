@@ -1,0 +1,72 @@
+/* nav {
+    background-color: #007acc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+   */
+
+   /* Admin navbar */
+.admin-navbar {
+  background-color: #007acc;
+  /* margin-bottom: 25rem; */
+  height: 80px;
+  width: 100%;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Admin navbar logo or title */
+.admin-navbar h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Admin navbar navigation links */
+.admin-navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-navbar li {
+  float: left;
+  margin-right: 20px;
+}
+
+.admin-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.admin-navbar a:hover {
+  background-color: #444;
+}
+
+/* Active admin navbar link */
+.admin-navbar a.active {
+  background-color: #04AA6D;
+  color: #fff;
+}

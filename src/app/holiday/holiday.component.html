@@ -1,0 +1,29 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="holiday-list">
+  <h2>Holidays</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let holiday of holidays">
+        <td>{{ holiday.id }}</td>
+        <td>{{ holiday.name }}</td>
+        <td>{{ holiday.date }}</td>
+        <td>
+          <button [routerLink]="['/holiday/edit', holiday.id]">Edit</button>
+          <button (click)="deleteHoliday(holiday.id)" class="delete-button">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

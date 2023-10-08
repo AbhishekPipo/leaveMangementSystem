@@ -1,0 +1,71 @@
+/* Apply styles to the user table */
+.user-table {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  table {
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #f0f0f0;
+  }
+  
+  /* Apply styles to buttons */
+  button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Apply styles to the edit form */
+  .edit-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .edit-form.hide-form {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+  
+
+  /* Add a CSS class for the delete button */
+.delete-button {
+    background-color: #ff0000; /* Red background color */
+    color: #fff; /* Text color */
+  }
+  
+  /* Adjust hover effect for the delete button */
+  .delete-button:hover {
+    background-color: #dd0000; /* Darker red on hover */
+  }
+  
+  

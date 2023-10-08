@@ -1,0 +1,14 @@
+<app-admin-navbar></app-admin-navbar>
+<h2 style="display: flex; justify-content: center;" >Add User</h2>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" formControlName="username" required>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password" required>
+  </div>
+  <button type="submit">Add User</button>
+</form>
+<app-footer></app-footer>

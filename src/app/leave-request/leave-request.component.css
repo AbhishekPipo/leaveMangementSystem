@@ -1,0 +1,136 @@
+/* leave-request.component.css */
+
+.leave-request {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  table th:hover {
+    background-color: #007acc;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Approve and Reject buttons */
+  .approve-button,
+  .reject-button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 12px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .approve-button:hover,
+  .reject-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Status labels */
+  .status-label {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .status-pending {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .status-approved {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .status-rejected {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  /* leave-request.component.css */
+
+/* Define the styles for the blue button */
+.blue-button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blue-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Define the styles for the red button */
+  .red-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .red-button:hover {
+    background-color: #cc0000;
+  }
+  /* Add these styles to your global CSS or component-specific CSS file */
+
+/* Style for the heading row */
+.leave-request-list table thead tr {
+    background-color: #007acc; /* Blue background for the heading row */
+    color: #fff; /* White text color for the heading row */
+  }
+  
+  /* Style for the data rows */
+  .leave-request-list table tbody tr {
+    background-color: #f9f9f9; /* Light gray background for data rows */
+    color: #333; /* Dark text color for data rows */
+  }
+  
+  /* Style for even-numbered rows (alternating row colors) */
+  .leave-request-list table tbody tr:nth-child(even) {
+    background-color: #e6e6e6; /* Slightly darker background for even rows */
+  }
+  
+  /* Style for buttons within the rows */
+  .leave-request-list table tbody tr button {
+    background-color: #007acc; /* Blue background for buttons */
+    color: #fff; /* White text color for buttons */
+    padding: 4px 8px; /* Adjust padding for buttons */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style for the "Reject" button (red) */
+  .leave-request-list table tbody tr button.reject-button {
+    background-color: #ff0000; /* Red background for Reject button */
+  }
+  
+  /* Hover effect for buttons */
+  .leave-request-list table tbody tr button:hover {
+    background-color: #005a9c; /* Darker blue on hover for buttons */
+  }
+  

@@ -1,0 +1,69 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "username": "employee",
+      "password": "password"
+    },
+    {
+      "username": "abhi",
+      "password": "abhi",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "username": "paxo",
+      "password": "paxo"
+    },
+    {
+      "id": 5,
+      "username": "abhi",
+      "password": "password"
+    }
+  ],
+  "holidays": [
+    {
+      "id": 2,
+      "name": "Christmas123",
+      "date": "2023-12-25"
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": 1,
+      "startDate": "2000-03-12",
+      "endDate": "5678-04-23",
+      "status": "Approved",
+      "reason": "okghjvvhj"
+    },
+    {
+      "id": 2,
+      "startDate": "56789-04-23",
+      "endDate": "9876-04-23",
+      "status": "Pending",
+      "reason": "ok okkkk"
+    },
+    {
+      "id": 3,
+      "userId": 0,
+      "startDate": "6789-05-04",
+      "endDate": "0789-06-05",
+      "status": "Pending",
+      "reason": "fcgvhj"
+    }
+  ],
+  "leaveList": [
+    {
+      "id": 1,
+      "userId": 2,
+      "startDate": "2023-08-15",
+      "endDate": "2023-08-20",
+      "status": "Approved"
+    }
+  ]
+}

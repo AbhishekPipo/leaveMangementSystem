@@ -1,0 +1,38 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="user-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.username }}</td>
+        <td>{{ user.password }}</td>
+        <td>
+          <button (click)="editUser(user)">Edit</button>
+          <button  class="delete-button" (click)="deleteUser(user)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Edit User Form -->
+<form [formGroup]="editForm" *ngIf="editingUser" class="edit-form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" formControlName="username" />
+<br>
+  <label for="password">Password:</label>
+  <input type="text" id="password" formControlName="password" />
+
+  <button type="button" (click)="saveUser()">Save</button>
+</form>
+
+<app-footer>
+  
+</app-footer>
